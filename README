@@ -1,0 +1,28 @@
+Researchers often work with messy datasets. This tool quickly analyses uploaded medical data and shows useful summaries like averages, missing values, and potential risk patterns.
+
+How does this work?
+
+1. User downloads a dataset
+For example, a medical dataset such as Heart Disease dataset, or Diabetes dataset
+These datasets are usually CSV files.:
+patient_id,age,sex,blood_pressure,cholesterol,bmi,diagnosis
+P001,67,F,150,245,31.2,Hypertension
+P002,45,M,128,190,24.8,Healthy
+P003,72,F,160,260,33.5,Diabetes
+
+2. User uploads this dataset to the website
+The Flask app has an upload form. 
+
+3. The dataset is read
+In python the CSV is read and the dataset becomes a list of dictionaries. 
+Now the app can analyse it. 
+
+4. App generates insights
+    - dataset preview of the first 10 rows
+    - summary statistics for the numeric columns
+    - a missing data report 
+    - simple risk rule i.e. 
+         High risk patients:
+        age > 60 AND cholesterol > 240
+
+        

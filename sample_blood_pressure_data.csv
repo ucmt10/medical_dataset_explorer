@@ -1,0 +1,11 @@
+patient_id,age,sex,systolic_bp,diastolic_bp,heart_rate,diagnosis
+B001,66,F,150,95,82,Hypertension
+B002,40,M,120,80,70,Normal
+B003,72,F,160,100,88,Hypertension
+B004,55,M,135,85,76,Elevated
+B005,61,F,148,92,80,Hypertension
+B006,35,M,118,78,68,Normal
+B007,69,F,155,96,85,Hypertension
+B008,52,M,132,84,74,Elevated
+B009,44,F,125,82,72,Normal
+B010,63,M,150,94,83,Hypertension

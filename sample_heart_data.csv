@@ -1,0 +1,11 @@
+patient_id,age,sex,blood_pressure,cholesterol,bmi,diagnosis
+P001,67,F,150,245,31.2,Hypertension
+P002,45,M,128,190,24.8,Healthy
+P003,72,F,160,260,33.5,High Risk
+P004,53,M,135,210,28.1,Pre-hypertension
+P005,61,F,148,235,30.4,Hypertension
+P006,39,M,120,180,23.2,Healthy
+P007,70,F,155,250,32.1,High Risk
+P008,58,M,142,220,29.6,Hypertension
+P009,47,F,130,195,26.7,Healthy
+P010,65,M,150,240,31.5,High Risk
