@@ -1,0 +1,11 @@
+patient_id,age,sex,glucose,bmi,insulin,diagnosis
+D001,50,F,140,32.5,85,Diabetes
+D002,34,M,95,24.1,70,Healthy
+D003,62,F,155,34.2,90,Diabetes
+D004,41,M,110,27.3,78,Pre-diabetes
+D005,55,F,148,30.9,88,Diabetes
+D006,29,M,92,22.5,65,Healthy
+D007,68,F,160,35.4,95,Diabetes
+D008,47,M,118,28.6,80,Pre-diabetes
+D009,38,F,102,25.9,72,Healthy
+D010,60,M,150,33.1,92,Diabetes
