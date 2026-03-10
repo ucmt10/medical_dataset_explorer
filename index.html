@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Dataset Explorer</title> 
+    <title>Medical Dataset Explorer</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
+
 <body>
     <h1>Medical Dataset Explorer</h1>
-    <p>Testing! Testing! 123! The homepage is working.<p>
+    <p>
+        Upload a medical dataset and the website will analyse it.
+        You can also download one of the sample datasets below to try the tool.
+    </p>
+    <h2>Download Sample Datasets</h2>
+
+    <div>
+        <p>Heart Health Dataset</p>
+        <a href="{{url_for('static', filename='datasets/sample_heart_data.csv')}}" download>
+            <button>Download</button>
+        </a>
+    </div>
+
+    <div>
+        <p> Diabetes Risk Dataset</p>
+        <a href="{{url_for('static', filename='datasets/sample_heart_data.csv')}}" download>
+            <button>Download</button>
+        </a>
+    </div>
+
+    <div>
+        <p>Blood Pressure Dataset</p>
+        <a href="{{url_for('static', filename='datasets/sample_heart_data.csv')}}" download>
+            <button>Download</button>
+        </a>
+    </div>
+
+    <hr>
+
+    <h2>Analyse your Own Dataset</h2>
+
+    <a href="{{ url_for('upload') }}">
+        <button>Upload Dataset</button>
+    </a>
+
 </body>
+
 </html>
