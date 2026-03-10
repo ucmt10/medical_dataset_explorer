@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Dataset</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css') }}">
+</head>
+<body>
+    
+    <h1>Upload a Dataset</h1>
+
+    <p>Select a CSV file to analyse.</p>
+
+    <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">         <!-- POST - send data to server -->
+        <input type="file" name="dataset" accept=".csv">
+        <button type="submit">Upload File</button>
+    </form>
+
+    <br>
+
+    <a href="/">Back to Home</a>
+
+</body>
+</html>
