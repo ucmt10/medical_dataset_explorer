@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Dataset Results</h1>
+
+    <p><strong>File name:</strong> {{ filename }} </p>
+    <p><strong>Number of rows:</strong> {{ row_count }} </p>
+    <p><strong>Number of columns:</strong> {{ column_count }} </p>
+
+     <h2>Column Names</h2>
+     <ul>
+        {% for column in column_names %}
+            <li>{{ column }}</li>
+        {% endfor %}
+     </ul>
+
+      <h2>Preview of First 5 Rows</h2>
+      {{ preview_data | safe }}
+
+
+     <h2>Missing Values</h2>
+     <ul>
+        {% for column, count in missing_values.items() %}
+            <li>{{ column }}: {{ count }}</li>
+        {% endfor %}
+     </ul>
+
+     <h2>Numeric Summary Statistics</h2>
+      {{ numeric_summary | safe }}
+
+
+      <br>
+      <a href="{{ url_for('upload') }}">Upload Another Dataset</a>
+      <br>
+      <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
